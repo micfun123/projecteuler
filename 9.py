@@ -1,13 +1,10 @@
-a = 1
-b = 1
-c = 1
+import math
+tosolve = 1000
 
-for a in range(100,500):
-    for b in range(100,500):
-        for c in range(100,500):
-            if a + b + c == 1000:
-                if a**2 + b**2 == c**2:
-                    print(a*b*c)
-                    print(a,b,c)
-                    break
-                    
+for a in range(1, tosolve):
+    for b in range(a+1, tosolve):
+        c = math.sqrt(a**2 + b**2)
+        if a + b + c == tosolve:
+            print(a*b*c)
+            print(a, b, c)
+            break
