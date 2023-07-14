@@ -8,9 +8,10 @@ biggest = 0
 def isPalindrome(n):
     return str(n) == str(n)[::-1]
 
-for i in range(100,999):
-    for j in range(100,999):
-        x = i *j
-        if isPalindrome(x):
-            biggest = x
+#find the biggest palindrome made from the product of two 3-digit numbers
+for i in range(100, 1000):
+    for j in range(100, 1000):
+        if isPalindrome(i*j) and i*j > biggest:
+            biggest = i*j
+
 print(biggest)
