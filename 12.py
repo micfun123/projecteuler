@@ -6,7 +6,7 @@ from math import sqrt
 
 #find first triangle number with over 500 divisors
 
-for i in range(1,100000):
+for i in range(490,100000):
     triangle = i*(i+1)/2
     divisors = 0
     triangle = int(triangle)
